@@ -1,0 +1,31 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-image: url(../images/icons/menu.svg);
+  background-size: cover;
+
+  @include hover(transform, scale(1.2));
+
+  @include onTablet {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--phone {
+    background-image: url(../images/icons/phone.svg);
+    color: #fff;
+  }
+
+  &--menu {
+    background-image: url(../images/icons/menu.svg);
+
+    &:hover {
+      background-image: url(../images/icons/menu-hover.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(../images/icons/close.svg);
+  }
+}

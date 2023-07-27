@@ -3,11 +3,190 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>MyBike</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <h1>Miami</h1>
+    <header class="header">
+      <div class="top-bar">
+        <a href="#" class="top-bar__logo-link">
+          <img
+            src="./images/photos/white-logo.png"
+            alt="Bose logo"
+            class="top-bar__logo"
+          >
+        </a>
+        <div class="top-bar__icons">
+          <a href="tel:+1 234 555-55-55" class="icon icon--phone"></a>
+          <a href="#menu" class="icon icon--menu"></a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__waves"></div>
+
+        <h1 class="header__title">
+          Take the Streets
+        </h1>
+      </div>
+
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="top-bar menu__top">
+        <a href="#" class="top-bar__logo-link">
+          <img
+            src="./images/photos/black-logo.png"
+            alt="Bose logo"
+            class="top-bar__logo"
+          >
+        </a>
+        <div class="header__icons">
+          <a href="#" class="icon icon--close"></a>
+        </div>
+      </div>
+
+      <div class="menu__content">
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#recommended">Recommended</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#categories">Categories</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#how-to-buy">How to buy</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="menu__phone-number">
+          +1 234 555-55-55
+        </a>
+        <a class="menu__call-to-order">
+          Call to order
+        </a>
+
+      </div>
+    </aside>
+    <main class="main">
+      <section class="move-free">
+        <div class="move-free__container">
+          <h2 class="move-free__h2">Move Free</h2>
+          <p class="move-free__p">
+             Shift your ride, not gears.
+             Find the fastest way to move in the city as the bike adapts
+             intuitively to power the speed you need.
+          </p>
+        </div>
+      </section>
+      <section class="recommended" id="recommended">
+        <h2 class="recommended__title">Compare Bikes</h2>
+        <div class="recommended__container">
+          <div class="recommended__card">
+            <div class="recommended__image-container">
+              <img
+                src="./images/photos/2.jpg"
+                alt="#"
+                class="recommended__image"
+              >
+            </div>
+
+            <h4 class="recommended__h4">Sporty 4</h4>
+            <p class="recommended__description">The iconic frame brought to a new performance height as a sporty, active ride.</p>
+            <p class="recommended__price">$ 2 590</p>
+          </div>
+          <div class="recommended__card">
+            <div class="recommended__image-container">
+              <img
+                src="./images/photos/3.jpg"
+                alt="#"
+                class="recommended__image"
+              >
+            </div>
+            <h4 class="recommended__h4">Ride in town ST</h4>
+            <p class="recommended__description">An open frame for an upright riding position as the most comfortable ride in town.</p>
+            <p class="recommended__price">$ 2 590</p>
+          </div>
+          <div class="recommended__card">
+            <div class="recommended__image-container">
+              <img
+                src="./images/photos/4.jpg"
+                alt="#"
+                class="recommended__image"
+              >
+            </div>
+            <h4 class="recommended__h4">Agile ride 3</h4>
+            <p class="recommended__description">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
+            <p class="recommended__price">$ 2 090</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories" id="categories">
+        <h2 class="recommended__title">Browse Bose <br> products by category</h2>
+        <div class="container">
+          <div class="categories__container">
+            <img
+              src="./images/photos/5.jpg"
+              alt="#"
+              class="categories__image"
+            >
+            <img
+              src="./images/photos/6.jpg"
+              alt="#"
+              class="categories__image-small"
+            >
+          </div>
+          <h3 class="categories__h3">Headphones & earbuds</h3>
+
+          <div class="categories__container">
+            <img
+              src="./images/photos/7.jpg"
+              alt="#"
+              class="categories__image"
+            >
+            <img
+              src="./images/photos/8.jpg"
+              alt="#"
+              class="categories__image-small"
+            >
+          </div>
+          <h3 class="categories__h3">Speakers</h3>
+
+          <div class="categories__container">
+            <img
+              src="./images/photos/9.jpg"
+              alt="#"
+              class="categories__image-small"
+            >
+            <img
+              src="./images/photos/10.jpg"
+              alt="#"
+              class="categories__image"
+            >
+          </div>
+          <h3 class="categories__h3">Audio sunglasses</h3>
+        </div>
+        <div class="categories__button-container">
+          <button class="categories__button">View all</button>
+        </div>
+
+
+      </section>
+      <section></section>
+    </main>
+
   </body>
 </html>
